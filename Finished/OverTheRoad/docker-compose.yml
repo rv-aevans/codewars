@@ -1,0 +1,13 @@
+version: "3.9"
+    
+services:
+    local_db:
+        container_name: sqldb
+        build: 
+            context: ./data
+        environment:
+            MYSQL_ROOT_PASSWORD: "${PASSWORD}"
+            MYSQL_DATABASE: local_nonsense
+        ports: 
+            - "4500:3306"
+            
