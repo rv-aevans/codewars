@@ -6,28 +6,20 @@ import (
 )
 
 func main() {
-	fmt.Println(ValidParentheses("(())"))
+	fmt.Println(ValidParentheses("()()"))
 }
 
 func ValidParentheses(parens string) bool {
-	fmt.Println(parens)
-	splitParen := strings.Split(parens, "")
-	var open, closed int
-	for _, char := range splitParen {
+	openCount := 0
+	for _, char := range strings.Split(parens, "") {
 		if char == "(" {
-			open++
-		} else if char == (")") {
-			closed++
+			openCount++
+		} else if char == ")" && openCount == 0 {
+			return false
+		} else if char == ")" {
+			openCount--
 		}
 	}
-	if len(splitParen) == 0 {
-		return true
-	} else if len(splitParen) == 1 {
-		return false
-	} else if open != closed {
-		return false
-	} else if splitParen[len(splitParen)-2] == ")" && splitParen[len(splitParen)-1] == "(" {
-		return false
-	}
-	return true
+
+	return openCount == 0
 }
