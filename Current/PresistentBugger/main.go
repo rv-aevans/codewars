@@ -22,9 +22,9 @@ func Persistence(num, count int) int {
 			digString, _ := strconv.Atoi(num)
 			numSlice = append(numSlice, digString)
 		}
-		for i, _ := range numSlice {
-			a[]
-		}
+		// for i, _ := range numSlice {
+		// 	a[]
+		// }
 		if total >= 10 {
 			Persistence(total, count)
 		} else {
