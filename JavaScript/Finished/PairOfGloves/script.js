@@ -7,3 +7,4 @@ function numberOfPairs(gloves){
 }
 
 console.log(numberOfPairs(['red','red','blue','blue','blue','green']))
+// Prints 2
