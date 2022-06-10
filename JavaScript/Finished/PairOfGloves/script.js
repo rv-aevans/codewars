@@ -6,4 +6,4 @@ function numberOfPairs(gloves){
     return [...res.values()].reduce((a,b) => a + Math.floor(b/2), 0)
 }
 
-console.log(numberOfPairs(['red','red','blue','blue']))
+console.log(numberOfPairs(['red','red','blue','blue','blue','green']))
