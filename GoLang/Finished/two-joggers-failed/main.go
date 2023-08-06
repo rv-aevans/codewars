@@ -41,15 +41,15 @@ var p = PriceExample{
 }
 
 func main() {
-	var basePrice int
-	// priceExample, err := svc.Db.GetPriceByZipAndModel()
-	// country, err := svc.Db.GetCountyByZip
-	country := "us"
+	// basePrice := 1
+	// // priceExample, err := svc.Db.GetPriceByZipAndModel()
+	// // country, err := svc.Db.GetCountyByZip
+	// country := "us"
 
-	switch country {
-	case "us":
-		basePrice = p.base_price_us
-	case "ca":
-		basePrice = p.base_price_ca
-	}
+	// switch country {
+	// case "us":
+	// 	basePrice = p.base_price_us
+	// case "ca":
+	// 	basePrice = p.base_price_ca
+	// }
 }

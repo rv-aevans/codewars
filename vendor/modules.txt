@@ -1,0 +1,2 @@
+# github.com/jmoiron/sqlx v1.3.5
+## explicit; go 1.10

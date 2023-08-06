@@ -31,7 +31,7 @@ func Encode(text string, rails int) string {
 			if j == 0 {
 				output = output + textSlice[i-1]
 			} else {
-				index = index + (currentMultiplier * 2)
+				// index = index + (currentMultiplier * 2)
 				output = output + textSlice[index]
 			}
 			if index < len(textSlice) {

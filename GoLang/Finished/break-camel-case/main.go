@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
-	fmt.Println(solution("camelCasing"))
+	// fmt.Println(solution("camelCasing"))
 }
