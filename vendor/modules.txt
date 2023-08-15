@@ -1,2 +1,3 @@
-# github.com/jmoiron/sqlx v1.3.5
-## explicit; go 1.10
+# github.com/gSpera/morse v1.1.2
+## explicit
+github.com/gSpera/morse
