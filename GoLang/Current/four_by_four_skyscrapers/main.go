@@ -90,7 +90,6 @@ func handleClue(s string, rev bool, index, clue int) {
 			}
 		}
 	case 2:
-
 		for _, v := range oldSet {
 			if v[i0] == 4 || (v[i0] == 1 && v[i1] != 4) || (v[i0] == 2 && v[i1] == 3) {
 				continue
