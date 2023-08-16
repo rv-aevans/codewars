@@ -32,27 +32,17 @@ func SolvePuzzle(clues []int) [][]int {
 			continue
 		}
 		if i < 4 {
-			fmt.Println(i, "col")
 			handleClue("col", false, i, v)
 		} else if i < 8 {
-			fmt.Println(i, "row")
 			handleClue("row", true, i, v)
 		} else if i < 12 {
-			fmt.Println(i, "col")
 			handleClue("col", true, i, v)
 		} else {
-			fmt.Println(i, "row")
 			handleClue("row", false, i, v)
 		}
 	}
 
-	for i, v := range rowMap {
-		var newSet [][]int
-		if v[i][2] == 4 {
-			newSet = append(newSet, v[i])
-		}
-		rowMap[i] = newSet
-	}
+	fmt.Println(colMap[2])
 
 	return nil
 }
@@ -105,7 +95,6 @@ func handleClue(s string, rev bool, index, clue int) {
 			if v[i0] == 4 || (v[i0] == 1 && v[i1] != 4) || (v[i0] == 2 && v[i1] == 3) {
 				continue
 			}
-			fmt.Println(v[i0], v[i1])
 			newSet = append(newSet, v)
 		}
 	case 3:
